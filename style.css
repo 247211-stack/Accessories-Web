@@ -52,3 +52,51 @@
 .navbar .nav-link:hover {
     color: #E6D0CD !important;
 }
+.products-section {
+    background: #f9f6f4;
+}
+
+.section-subtitle {
+    color: #E6D0CD;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid #eee;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.product-info h6 {
+    color: #E6D0CD;
+    margin-top: 5px;
+}
+
+/* hover effect */
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px #00000010;
+}
