@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #111 !important;
+  padding: 15px 0;
+}
+
+/* LOGO */
+.navbar-brand {
+  color: #ffffff !important;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* LINKS */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.navbar-nav .nav-link:hover {
+  color: #ff4d6d !important;
+}
+
+/* UNDERLINE ANIMATION */
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #ff4d6d;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
