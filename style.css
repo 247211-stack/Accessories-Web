@@ -100,3 +100,11 @@
     transform: translateY(-8px);
     box-shadow: 0 15px 30px #00000010;
 }
+.about-section {
+    background: #fff;
+}
+
+.about-img {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #00000015;
+}
