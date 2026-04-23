@@ -108,11 +108,12 @@
     border-radius: 10px;
     box-shadow: 0 10px 30px #00000015;
 }
+/* SECTION BACKGROUND */
 .features-section {
-    background: linear-gradient(to bottom, #fdfbfa, #f6f1ee);
+    background: linear-gradient(to bottom, #fdfbfa, #f4eeea);
 }
 
-/* Section spacing improvement */
+/* TITLE IMPROVEMENT */
 .features-section .section-title {
     font-weight: 600;
     letter-spacing: 1px;
@@ -122,57 +123,68 @@
 .feature-box {
     background: #ffffff;
     padding: 40px 30px;
-    border-radius: 12px;
+    border-radius: 15px;
     border: 1px solid #eee;
+    transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
-    transition: all 0.4s ease;
-}
-
-/* soft glow effect */
-.feature-box::before {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, #E6D0CD30, transparent);
-    top: -100%;
-    left: -100%;
-    transition: 0.5s;
-}
-
-/* hover animation */
-.feature-box:hover::before {
-    top: 0;
-    left: 0;
-}
-
-/* hover main */
-.feature-box:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 40px #00000015;
-    border-color: #E6D0CD;
 }
 
 /* ICON STYLE */
-.feature-box h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-weight: 600;
+.feature-box .icon {
+    font-size: 28px;
+    background: #E6D0CD20;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 /* TEXT */
+.feature-box h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .feature-box p {
     font-size: 14px;
     color: #666;
 }
 
-/* optional icon circle */
+/* SOFT GLOW EFFECT */
+.feature-box::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, #E6D0CD40, transparent);
+    top: -120%;
+    left: -120%;
+    transition: 0.5s;
+}
+
+/* HOVER EFFECT */
+.feature-box:hover::before {
+    top: 0;
+    left: 0;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px #00000015;
+    border-color: #E6D0CD;
+}
+
+/* DECORATIVE LIGHT TEXT */
 .feature-box::after {
     content: "★";
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;
     font-size: 60px;
-    color: #E6D0CD20;
+    color: #E6D0CD15;
 }
