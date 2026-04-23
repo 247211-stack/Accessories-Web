@@ -108,6 +108,54 @@
     border-radius: 10px;
     box-shadow: 0 10px 30px #00000015;
 }
+/* VIDEO SECTION */
+.video-section {
+    background: #f9f6f4;
+}
+
+/* VIDEO WRAPPER */
+.video-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px #00000020;
+}
+
+/* VIDEO */
+.video-wrapper video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* OVERLAY */
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #000000aa, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    color: #fff;
+}
+
+/* TEXT */
+.video-overlay h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.video-overlay p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* HOVER EFFECT */
+.video-wrapper:hover video {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 /* SECTION BACKGROUND */
 .features-section {
     background: linear-gradient(to bottom, #fdfbfa, #f4eeea);
